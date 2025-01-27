@@ -1,0 +1,44 @@
+Epoch 1/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.1793 - accuracy: 0.9891
+Epoch 1: val_loss improved from inf to 0.03450, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 26515s 553ms/step - loss: 0.1793 - accuracy: 0.9891 - val_loss: 0.0345 - val_accuracy: 0.9963 - lr: 0.0010
+Epoch 2/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0420 - accuracy: 0.9957
+Epoch 2: val_loss improved from 0.03450 to 0.02605, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 24815s 517ms/step - loss: 0.0420 - accuracy: 0.9957 - val_loss: 0.0261 - val_accuracy: 0.9984 - lr: 0.0010
+Epoch 3/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0383 - accuracy: 0.9962
+Epoch 3: val_loss did not improve from 0.02605
+47968/47968 [==============================] - 26244s 547ms/step - loss: 0.0383 - accuracy: 0.9962 - val_loss: 0.0286 - val_accuracy: 0.9984 - lr: 0.0010
+Epoch 4/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0374 - accuracy: 0.9962
+Epoch 4: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+
+Epoch 4: val_loss did not improve from 0.02605
+47968/47968 [==============================] - 27152s 566ms/step - loss: 0.0374 - accuracy: 0.9962 - val_loss: 0.0623 - val_accuracy: 0.9853 - lr: 0.0010
+Epoch 5/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0146 - accuracy: 0.9989
+Epoch 5: val_loss improved from 0.02605 to 0.00963, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 24830s 518ms/step - loss: 0.0146 - accuracy: 0.9989 - val_loss: 0.0096 - val_accuracy: 0.9995 - lr: 1.0000e-04
+Epoch 6/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0110 - accuracy: 0.9991
+Epoch 6: val_loss improved from 0.00963 to 0.00892, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 24979s 521ms/step - loss: 0.0110 - accuracy: 0.9991 - val_loss: 0.0089 - val_accuracy: 0.9993 - lr: 1.0000e-04
+Epoch 7/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0100 - accuracy: 0.9991
+Epoch 7: val_loss improved from 0.00892 to 0.00762, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 25145s 524ms/step - loss: 0.0100 - accuracy: 0.9991 - val_loss: 0.0076 - val_accuracy: 0.9995 - lr: 1.0000e-04
+Epoch 8/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0094 - accuracy: 0.9991
+Epoch 8: val_loss improved from 0.00762 to 0.00753, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 21808s 455ms/step - loss: 0.0094 - accuracy: 0.9991 - val_loss: 0.0075 - val_accuracy: 0.9994 - lr: 1.0000e-04
+Epoch 9/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0090 - accuracy: 0.9991
+Epoch 9: val_loss improved from 0.00753 to 0.00688, saving model to angry_expression_model_best.h5
+47968/47968 [==============================] - 21087s 440ms/step - loss: 0.0090 - accuracy: 0.9991 - val_loss: 0.0069 - val_accuracy: 0.9995 - lr: 1.0000e-04
+Epoch 10/10
+47968/47968 [==============================] - ETA: 0s - loss: 0.0086 - accuracy: 0.9991
+Epoch 10: val_loss did not improve from 0.00688
+47968/47968 [==============================] - 21546s 449ms/step - loss: 0.0086 - accuracy: 0.9991 - val_loss: 0.0069 - val_accuracy: 0.9995 - lr: 1.0000e-04
+[INFO] Model training completed. Best model saved as 'angry_expression_model_best.h5'.
+
