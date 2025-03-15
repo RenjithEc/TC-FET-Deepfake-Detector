@@ -6,3 +6,4 @@ angry/source_data_prep/angry_frames.txt
 *.csv
 *.pth
 *.h5
+*.dat
