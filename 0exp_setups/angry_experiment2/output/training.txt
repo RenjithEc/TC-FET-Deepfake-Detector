@@ -1,0 +1,21 @@
+Epoch 1/10
+95936/95936 [==============================] - ETA: 0s - loss: 0.0759 - accuracy: 0.9941
+Epoch 1: val_loss improved from inf to 0.02980, saving model to angry_expression_model_best.h5
+95936/95936 [==============================] - 26017s 271ms/step - loss: 0.0759 - accuracy: 0.9941 - val_loss: 0.0298 - val_accuracy: 0.9977 - lr: 1.0000e-04
+Epoch 2/10
+95936/95936 [==============================] - ETA: 0s - loss: 0.0283 - accuracy: 0.9970
+Epoch 2: val_loss did not improve from 0.02980
+95936/95936 [==============================] - 25786s 269ms/step - loss: 0.0283 - accuracy: 0.9970 - val_loss: 0.1174 - val_accuracy: 0.9644 - lr: 1.0000e-04
+Epoch 3/10
+95936/95936 [==============================] - ETA: 0s - loss: 0.0230 - accuracy: 0.9975
+Epoch 3: ReduceLROnPlateau reducing learning rate to 9.999999747378752e-06.
+
+Epoch 3: val_loss did not improve from 0.02980
+95936/95936 [==============================] - 25856s 270ms/step - loss: 0.0230 - accuracy: 0.9975 - val_loss: 0.0718 - val_accuracy: 0.9810 - lr: 1.0000e-04
+Epoch 4/10
+95936/95936 [==============================] - ETA: 0s - loss: 0.0155 - accuracy: 0.9993Restoring model weights from the end of the best epoch: 1.
+
+Epoch 4: val_loss did not improve from 0.02980
+95936/95936 [==============================] - 26046s 271ms/step - loss: 0.0155 - accuracy: 0.9993 - val_loss: 0.0500 - val_accuracy: 0.9899 - lr: 1.0000e-05
+Epoch 4: early stopping
+[INFO] Model training completed. Best model saved as 'angry_expression_model_best.h5'.

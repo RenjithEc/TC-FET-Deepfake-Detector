@@ -1,0 +1,60 @@
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(None, 128, 128, 3  0           []                               
+                                )]                                                                
+                                                                                                  
+ input_2 (InputLayer)           [(None, 128, 128, 3  0           []                               
+                                )]                                                                
+                                                                                                  
+ conv2d (Conv2D)                (None, 128, 128, 8)  224         ['input_1[0][0]']                
+                                                                                                  
+ conv2d_2 (Conv2D)              (None, 128, 128, 8)  224         ['input_2[0][0]']                
+                                                                                                  
+ batch_normalization (BatchNorm  (None, 128, 128, 8)  32         ['conv2d[0][0]']                 
+ alization)                                                                                       
+                                                                                                  
+ batch_normalization_2 (BatchNo  (None, 128, 128, 8)  32         ['conv2d_2[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ max_pooling2d (MaxPooling2D)   (None, 64, 64, 8)    0           ['batch_normalization[0][0]']    
+                                                                                                  
+ max_pooling2d_2 (MaxPooling2D)  (None, 64, 64, 8)   0           ['batch_normalization_2[0][0]']  
+                                                                                                  
+ conv2d_1 (Conv2D)              (None, 64, 64, 16)   1168        ['max_pooling2d[0][0]']          
+                                                                                                  
+ conv2d_3 (Conv2D)              (None, 64, 64, 16)   1168        ['max_pooling2d_2[0][0]']        
+                                                                                                  
+ batch_normalization_1 (BatchNo  (None, 64, 64, 16)  64          ['conv2d_1[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ batch_normalization_3 (BatchNo  (None, 64, 64, 16)  64          ['conv2d_3[0][0]']               
+ rmalization)                                                                                     
+                                                                                                  
+ max_pooling2d_1 (MaxPooling2D)  (None, 32, 32, 16)  0           ['batch_normalization_1[0][0]']  
+                                                                                                  
+ max_pooling2d_3 (MaxPooling2D)  (None, 32, 32, 16)  0           ['batch_normalization_3[0][0]']  
+                                                                                                  
+ flatten (Flatten)              (None, 16384)        0           ['max_pooling2d_1[0][0]']        
+                                                                                                  
+ flatten_1 (Flatten)            (None, 16384)        0           ['max_pooling2d_3[0][0]']        
+                                                                                                  
+ concatenate (Concatenate)      (None, 32768)        0           ['flatten[0][0]',                
+                                                                  'flatten_1[0][0]']              
+                                                                                                  
+ dense (Dense)                  (None, 64)           2097216     ['concatenate[0][0]']            
+                                                                                                  
+ dropout (Dropout)              (None, 64)           0           ['dense[0][0]']                  
+                                                                                                  
+ dense_1 (Dense)                (None, 32)           2080        ['dropout[0][0]']                
+                                                                                                  
+ dropout_1 (Dropout)            (None, 32)           0           ['dense_1[0][0]']                
+                                                                                                  
+ dense_2 (Dense)                (None, 1)            33          ['dropout_1[0][0]']              
+                                                                                                  
+==================================================================================================
+Total params: 2,102,305
+Trainable params: 2,102,209
+Non-trainable params: 96
+__________________________________________________________________________________________________
