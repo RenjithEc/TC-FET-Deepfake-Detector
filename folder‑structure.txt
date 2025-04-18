@@ -1,0 +1,164 @@
+Folder PATH listing for volume New Volume
+Volume serial number is EAF9-358B
+D:\SCHOOL\RESEARCH\TC-FET-DEEPFAKE-DETECTOR
+|   .gitignore
+|   file_list.txt
+|   folder-structure.txt
+|   README.md
+|   
++---0exp_setups
+|   |   angry_dataset_real_fake.csv
+|   |   angry_dataset_real_fake_filtered.csv
+|   |   angry_expression_model_best.pth
+|   |   angry_feature_cnn.ipynb
+|   |   
+|   +---angry_experiment2
+|   |   |   angry_dataset_real_fake_filtered.csv
+|   |   |   angry_expression_model_best.h5
+|   |   |   cnn.ipynb
+|   |   |   
+|   |   \---output
+|   |           confusion.png
+|   |           model_summary.txt
+|   |           plot1.png
+|   |           plot2.png
+|   |           precision-recall.png
+|   |           roc_curve.png
+|   |           training.txt
+|   |           
+|   +---angry_experiment3
+|   |   |   angry_dataset_real_fake_filtered.csv
+|   |   |   angry_expression_model_best.h5
+|   |   |   cnn.ipynb
+|   |   |   
+|   |   \---output
+|   |           confusion.png
+|   |           plot1.png
+|   |           plot2.png
+|   |           precision-recall.png
+|   |           roc.png
+|   |           summary.txt
+|   |           training.txt
+|   |           
+|   +---angry_lightuniform_front_cnn
+|   |   |   angry_dataset_real_fake_filtered.csv
+|   |   |   angry_expression_model_best.h5
+|   |   |   cnn.ipynb
+|   |   |   cnn_overfit_fix.ipynb
+|   |   |   
+|   |   +---fix_output
+|   |   |       fix_confusion.png
+|   |   |       fix_precision_recall.png
+|   |   |       fix_roc.png
+|   |   |       
+|   |   \---output
+|   |           cnn_output.txt
+|   |           cnn_overfit_fix_output.txt
+|   |           confusion_matrix.png
+|   |           evaluation.txt
+|   |           fix_model_summary.txt
+|   |           fix_plot1.png
+|   |           fix_plot2.png
+|   |           model_summary.txt
+|   |           plot1.png
+|   |           plot2.png
+|   |           precision_recal.png
+|   |           roc_curve.png
+|   |           
+|   +---fake_cnn
+|   |       fake_cnn.ipynb
+|   |       fake_filtered.csv
+|   |       
+|   +---lstm_exp1
+|   |       angry_dataset_real_fake_filtered.csv
+|   |       angry_dataset_real_fake_part1.csv
+|   |       angry_dataset_real_fake_part2.csv
+|   |       angry_dataset_real_fake_part3.csv
+|   |       angry_dataset_real_fake_part4.csv
+|   |       angry_expression_model_best.h5
+|   |       train.ipynb
+|   |       
+|   +---lstm_exp2
+|   |       angry_expression_model_best.h5
+|   |       bilstm.ipynb
+|   |       
+|   +---lstm_exp3
+|   |       angry_expression_model_best.h5
+|   |       best_model.h5
+|   |       bilstemexp3.ipynb
+|   |       
+|   +---lstm_exp5
+|   |       bilstemexp5.ipynb
+|   |       
+|   +---lst_exp4
+|   |       best_model.h5
+|   |       bilstemexp4.ipynb
+|   |       
+|   +---manipulated_data_prep
+|   |       manipulated_faces.ipynb
+|   |       manipulated_frames.ipynb
+|   |       manipulated_opticalflow.ipynb
+|   |       
+|   \---source_data_prep
+|           angry_faces.ipynb
+|           angry_frames.ipynb
+|           angry_frames.txt
+|           angry_opticalflow.ipynb
+|           angry_opticalflow_output.text
+|           
++---1preprocessing
+|       fake_preprocessing.ipynb
+|       file_list.txt
+|       npz.ipynb
+|       npz_angry.ipynb
+|       npz_combined.ipynb
+|       npz_contempt.ipynb
+|       npz_disgust.ipynb
+|       npz_fear.ipynb
+|       npz_happy.ipynb
+|       npz_neutral.ipynb
+|       npz_sad.ipynb
+|       npz_surprise.ipynb
+|       npz_test_set.ipynb
+|       preprocessing.ipynb
+|       preprocessing_testset.ipynb
+|       preprocess_test.ipynb
+|       shape_predictor_68_face_landmarks.dat
+|       
++---angry
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---combined
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---contempt
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---disgust
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---fear
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---happy
+|   \---lstm_exp5
+|           best_model.h5
+|           bilstemexp5.ipynb
+|           
++---neutral
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
++---sad
+|       best_model.h5
+|       bilstemexp5.ipynb
+|       
+\---surprise
+        best_model.h5
+        bilstemexp5.ipynb
+        
